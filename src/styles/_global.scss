@@ -7,4 +7,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: aquamarine;
+    background-repeat: no-repeat;
+    &.dark {
+        background-image: url('../assets/images/bg-desktop-dark.jpg');
+    }
+    &.light {
+        background-image: url('../assets/images/bg-desktop-light.jpg');
+    }
 }

@@ -7,6 +7,13 @@ body {
   align-items: center;
   justify-content: center;
   background-color: aquamarine;
+  background-repeat: no-repeat;
+}
+body.dark {
+  background-image: url("../assets/images/bg-desktop-dark.jpg");
+}
+body.light {
+  background-image: url("../assets/images/bg-desktop-light.jpg");
 }
 
 .App {
