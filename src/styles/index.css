@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 body {
   margin: 0;
   width: 100%;
@@ -6,14 +7,16 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
   background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif;
 }
 body.dark {
   background-image: url("../assets/images/bg-desktop-dark.jpg");
+  background-color: hsl(235, 21%, 11%);
 }
 body.light {
   background-image: url("../assets/images/bg-desktop-light.jpg");
+  background-color: hsl(235, 21%, 11%);
 }
 
 .App {

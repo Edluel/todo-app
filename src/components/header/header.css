@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 .header {
   display: flex;
   flex-direction: row;
 }
+.header h1 {
+  font-weight: 700;
+  color: hsl(236, 33%, 92%);
+}
 .header-img {
   display: flex;
   align-items: center;
+}
+
+.rotate {
+  transform: rotate(360deg);
+  transition: transform 1s ease-in-out;
 }/*# sourceMappingURL=header.css.map */
