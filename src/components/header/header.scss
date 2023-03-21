@@ -3,19 +3,35 @@
 .header {
     display: flex;
     flex-direction: row;
-    h1 {
-        font-weight: 700;
-        color: $very-light-grayish-blue;
+    width: $app-width;
+    justify-content: space-between;
+
+    h1 { font-weight: 700; }
+
+    .rotate {
+        transform: rotate(360deg);
+        transition: transform 1s ease-in-out;
     }
 
     &-img {
         display: flex;
         align-items: center;
+        cursor: pointer;
+        &:hover {
+            @extend .rotate;
+        }
     }
+
+    
+    // Theme config
+    &.dark {
+        h1 { color: $light-grayish-blue-dark; }
+    }
+    &.light {
+        h1 { color: $light-grayish-blue; }
+    }
+
 }
 
-.rotate {
-    transform: rotate(360deg);
-    transition: transform 1s ease-in-out;
-}
+
   

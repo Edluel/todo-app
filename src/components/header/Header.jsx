@@ -20,16 +20,8 @@ export default function Header(props) {
     }, 3000);
   }
 
-  if (theme === 'dark') {
-    document.body.classList.add('dark');
-    document.body.classList.remove('light');
-  } else {
-    document.body.classList.remove('dark');
-    document.body.classList.add('light');
-  }
-
   return (
-    <div className="header">
+    <div className={`header ${theme}`}>
       <div className="header-title">
         <h1>T O D O</h1>
       </div>

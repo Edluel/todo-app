@@ -2,17 +2,24 @@
 .header {
   display: flex;
   flex-direction: row;
+  width: 380px;
+  justify-content: space-between;
 }
 .header h1 {
   font-weight: 700;
-  color: hsl(236, 33%, 92%);
+}
+.header .rotate, .header .header-img:hover {
+  transform: rotate(360deg);
+  transition: transform 1s ease-in-out;
 }
 .header-img {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-
-.rotate {
-  transform: rotate(360deg);
-  transition: transform 1s ease-in-out;
+.header.dark h1 {
+  color: hsl(234, 39%, 85%);
+}
+.header.light h1 {
+  color: hsl(233, 11%, 84%);
 }/*# sourceMappingURL=header.css.map */
