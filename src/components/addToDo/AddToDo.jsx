@@ -24,9 +24,6 @@ export default function AddToDo(props) {
     setData([...data, newTodo]);
     setNewTodoText('');
     setIsChecked(false);
-    alert(data[3].index);
-    alert(data[3].text);
-    alert(data[3].done);
   }
 
 

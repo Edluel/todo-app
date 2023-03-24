@@ -1,7 +1,8 @@
-import Header from './components/header/Header';
 import './styles/index.css';
 import { useState } from 'react';
+import Header from './components/header/Header';
 import AddToDo from './components/addToDo/AddToDo';
+import ToDoList from './components/toDoList/ToDoList';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
     <div className="App">
       < Header theme={theme} setTheme={setTheme} />
       < AddToDo data={data} setData={setData} />
+      < ToDoList data={data} setData={setData} />
     </div>
   );
 }

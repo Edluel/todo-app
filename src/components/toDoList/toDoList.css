@@ -1,0 +1,23 @@
+.to-do-list-container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.to-do-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+.to-do-list-container li {
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  margin-bottom: 5px;
+  padding: 10px;
+  cursor: grab;
+}
+.to-do-list-container li:hover {
+  background-color: #eaeaea;
+}
+.to-do-list-container li.isDragging {
+  opacity: 0.5;
+  cursor: grabbing;
+}/*# sourceMappingURL=toDoList.css.map */
