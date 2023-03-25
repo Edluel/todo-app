@@ -1,1 +1,34 @@
-/*# sourceMappingURL=addToDo.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+.add {
+  width: 380px;
+  display: flex;
+  border-radius: 5px;
+}
+.add form {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+}
+.add form label {
+  display: flex;
+  flex-grow: 1;
+}
+.add form label input[type=text] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding-left: 2px;
+  margin-right: 2px;
+  border: none;
+  background: none;
+}
+.add form button {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid hsl(235, 21%, 11%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.add form button:hover {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=addToDo.css.map */

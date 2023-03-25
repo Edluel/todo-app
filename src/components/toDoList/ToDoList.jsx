@@ -45,7 +45,7 @@ export default function ToDoList(props) {
                     >
                       <label>
                         <input type="checkbox" checked={item.done} onChange={() => handleCheck(index)} />
-                        <span>{item.text}</span>
+                        <span className={item.done ? 'done-text' : ''}>{item.text}</span>
                       </label>
                     </li>
                   )}

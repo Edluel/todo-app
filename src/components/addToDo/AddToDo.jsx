@@ -30,16 +30,17 @@ export default function AddToDo(props) {
 
   return (
     <div className="add">
-      <form onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
         <label>
           <input
+            className='add-chekbox'
             type="checkbox"
             checked={isChecked}
             onChange={handleCheckboxChange}
           />
           <input
             type="text"
-            placeholder="create new todo"
+            placeholder="Create new todo"
             value={newTodoText}
             onChange={handleInputChange}
             required

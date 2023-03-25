@@ -30,7 +30,7 @@ body {
     input[type="checkbox"]:checked {
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: 60%, contain;
         background-image: url('../assets/images/icon-check.svg'), $check-bg;
     }
 
@@ -44,9 +44,26 @@ body {
         input[type="checkbox"] {
             border-color: $very-dark-grayish-blue-dark;
         }
+        //add
+        .add{background-color: $very-dark-desaturated-blue;}
         input[type="checkbox"]:hover {
             border-color: $check-hover;
             box-shadow: -1px -1px 0 $check-hover-shadow;
+        }
+        input[type="text"]{
+            color: $light-grayish-blue-dark;
+        }
+        button{
+            color: $light-grayish-blue-dark;
+            &:hover{filter: brightness(50%);}
+        }
+        //to-do-list
+        li{
+            color: $light-grayish-blue-dark;
+            background-color: $very-dark-desaturated-blue;
+            &:hover {
+                background-color: $very-dark-grayish-blue-darker;
+            }
         }
         
              
@@ -55,14 +72,31 @@ body {
     &.light {
         //bg
         background-image: url('../assets/images/bg-desktop-light.jpg');
-        background-color: $very-light-gray;
+        background-color: $light-grayish-blue;
         //checkbox
         input[type="checkbox"] {
             border-color: $dark-grayish-blue;
             
         }
+        //add
+        .add{background-color: $very-light-gray;}
         input[type="checkbox"]:hover {
             border-color: $light-grayish-blue;
+        }
+        input[type="text"]{
+            color: $very-dark-grayish-blue;
+        }
+        button{
+            color: $very-dark-grayish-blue;
+            &:hover{background: $very-light-grayish-blue;}
+        }
+        //to-do-list
+        li {
+            color: $very-dark-grayish-blue;
+            background-color: $very-light-gray;
+            &:hover {
+                background-color: $very-light-grayish-blue;
+            }
         }
 
     }

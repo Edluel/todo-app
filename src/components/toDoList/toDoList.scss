@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .to-do-list-container {
     user-select: none;
 
@@ -7,15 +9,13 @@
     }
   
     li {
-      border: 1px solid #ccc;
-      background-color: #f4f4f4;
+      border: none;
       margin-bottom: 5px;
       padding: 10px;
       cursor: grab;
+      border-radius: 5px;
   
-      &:hover {
-        background-color: #eaeaea;
-      }
+
   
       &.isDragging {
         opacity: 0.5;
@@ -30,7 +30,14 @@
         white-space: nowrap;
         top: 50%;
         transform: translateY(-40%);
+        
+        &.done-text {
+          text-decoration: line-through;
+          color: $very-dark-grayish-blue;
+        }
+
       }
+
     }
   }
   

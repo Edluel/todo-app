@@ -26,7 +26,7 @@ body input[type=checkbox] {
 body input[type=checkbox]:checked {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 60%, contain;
   background-image: url("../assets/images/icon-check.svg"), linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 body.dark {
@@ -36,19 +36,57 @@ body.dark {
 body.dark input[type=checkbox] {
   border-color: hsl(233, 14%, 35%);
 }
+body.dark .add {
+  background-color: hsl(235, 24%, 19%);
+}
 body.dark input[type=checkbox]:hover {
   border-color: hsl(280, 87%, 65%);
   box-shadow: -1px -1px 0 hsl(192, 100%, 67%);
 }
+body.dark input[type=text] {
+  color: hsl(234, 39%, 85%);
+}
+body.dark button {
+  color: hsl(234, 39%, 85%);
+}
+body.dark button:hover {
+  filter: brightness(50%);
+}
+body.dark li {
+  color: hsl(234, 39%, 85%);
+  background-color: hsl(235, 24%, 19%);
+}
+body.dark li:hover {
+  background-color: hsl(237, 14%, 26%);
+}
 body.light {
   background-image: url("../assets/images/bg-desktop-light.jpg");
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(233, 11%, 84%);
 }
 body.light input[type=checkbox] {
   border-color: hsl(236, 9%, 61%);
 }
+body.light .add {
+  background-color: hsl(0, 0%, 98%);
+}
 body.light input[type=checkbox]:hover {
   border-color: hsl(233, 11%, 84%);
+}
+body.light input[type=text] {
+  color: hsl(235, 19%, 35%);
+}
+body.light button {
+  color: hsl(235, 19%, 35%);
+}
+body.light button:hover {
+  background: hsl(236, 33%, 92%);
+}
+body.light li {
+  color: hsl(235, 19%, 35%);
+  background-color: hsl(0, 0%, 98%);
+}
+body.light li:hover {
+  background-color: hsl(236, 33%, 92%);
 }
 
 .App {
