@@ -1,5 +1,6 @@
 .to-do-list-container {
     user-select: none;
+
     ul {
       list-style: none;
       padding: 0;
@@ -19,6 +20,16 @@
       &.isDragging {
         opacity: 0.5;
         cursor: grabbing;
+      }
+    }
+
+    label{
+      position: relative;
+      span {
+        position: absolute;
+        white-space: nowrap;
+        top: 50%;
+        transform: translateY(-40%);
       }
     }
   }

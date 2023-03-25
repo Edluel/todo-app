@@ -11,13 +11,44 @@ body {
   background-size: contain;
   font-family: "Josefin Sans", sans-serif;
 }
+body input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+body input[type=checkbox]:checked {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../assets/images/icon-check.svg"), linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
 body.dark {
   background-image: url("../assets/images/bg-desktop-dark.jpg");
   background-color: hsl(235, 21%, 11%);
 }
+body.dark input[type=checkbox] {
+  border-color: hsl(233, 14%, 35%);
+}
+body.dark input[type=checkbox]:hover {
+  border-color: hsl(280, 87%, 65%);
+  box-shadow: -1px -1px 0 hsl(192, 100%, 67%);
+}
 body.light {
   background-image: url("../assets/images/bg-desktop-light.jpg");
   background-color: hsl(0, 0%, 98%);
+}
+body.light input[type=checkbox] {
+  border-color: hsl(236, 9%, 61%);
+}
+body.light input[type=checkbox]:hover {
+  border-color: hsl(233, 11%, 84%);
 }
 
 .App {

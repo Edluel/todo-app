@@ -15,13 +15,55 @@ body {
     //font
     font-family: $font;
 
-    //theme bg
+    //general
+    input[type="checkbox"] {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+    }
+
+    input[type="checkbox"]:checked {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../assets/images/icon-check.svg'), $check-bg;
+    }
+
+
+    //theme
     &.dark {
+        //bg
         background-image: url('../assets/images/bg-desktop-dark.jpg');
         background-color: $very-dark-blue;
+        //checkbox
+        input[type="checkbox"] {
+            border-color: $very-dark-grayish-blue-dark;
+        }
+        input[type="checkbox"]:hover {
+            border-color: $check-hover;
+            box-shadow: -1px -1px 0 $check-hover-shadow;
+        }
+        
+             
+
     }
     &.light {
+        //bg
         background-image: url('../assets/images/bg-desktop-light.jpg');
         background-color: $very-light-gray;
+        //checkbox
+        input[type="checkbox"] {
+            border-color: $dark-grayish-blue;
+            
+        }
+        input[type="checkbox"]:hover {
+            border-color: $light-grayish-blue;
+        }
+
     }
 }

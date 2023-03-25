@@ -20,4 +20,13 @@
 .to-do-list-container li.isDragging {
   opacity: 0.5;
   cursor: grabbing;
+}
+.to-do-list-container label {
+  position: relative;
+}
+.to-do-list-container label span {
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  transform: translateY(-40%);
 }/*# sourceMappingURL=toDoList.css.map */
