@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import './toDoList.css';
+import ToDoMenu from '../toDoMenu/ToDoMenu';
 
 export default function ToDoList(props) {
   const { data, setData } = props;
@@ -34,28 +35,31 @@ export default function ToDoList(props) {
             <ul {...provided.droppableProps} ref={provided.innerRef}>
               {data.map((item, index) => (
                 // carrega os itens da lista
-                <Draggable key={item.index} draggableId={String(item.index)} index={index}>
-                  {(provided, snapshot) => (
-                    // item reordenável, precisa de key para funcionar
-                    <li
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className={snapshot.isDragging ? 'isDragging' : ''}
-                    >
-                      <label>
-                        <input type="checkbox" checked={item.done} onChange={() => handleCheck(index)} />
-                        <span className={item.done ? 'done-text' : ''}>{item.text}</span>
-                      </label>
-                    </li>
-                  )}
-                </Draggable>
+                item.hidden ? null :( // se o item estiver com hidden = true, não renderiza
+                  <Draggable key={item.index} draggableId={String(item.index)} index={index}>
+                    {(provided, snapshot) => (
+                      // item reordenável, precisa de key para funcionar
+                      <li
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        {...provided.dragHandleProps}
+                        className={snapshot.isDragging ? 'isDragging' : ''}
+                      >
+                        <label>
+                          <input type="checkbox" checked={item.done} onChange={() => handleCheck(index)} />
+                          <span className={item.done ? 'done-text' : ''}>{item.text}</span>
+                        </label>
+                      </li>
+                    )}
+                  </Draggable>
+                )
               ))}
               {provided.placeholder}
             </ul>
           )}
         </Droppable>
       </DragDropContext>
+      <ToDoMenu data={data} setData={setData} />
     </div>
   );
 }

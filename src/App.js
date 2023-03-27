@@ -12,17 +12,20 @@ function App() {
     {
       index: 0,
       text: 'Fazer compras',
-      done: false
+      done: false,
+      hidden: false
     },
     {
       index: 1,
       text: 'Estudar React',
-      done: true
+      done: true,
+      hidden: false
     },
     {
       index: 2,
       text: 'Caminhar no parque',
-      done: false
+      done: false,
+      hidden: false
     },
   ]);
 

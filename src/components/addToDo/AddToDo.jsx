@@ -20,7 +20,8 @@ export default function AddToDo(props) {
     const newTodo = {
       index: data.length,
       text: newTodoText,
-      done: isChecked
+      done: isChecked,
+      hidden: false,
     };
     setData([...data, newTodo]);
     setNewTodoText('');
