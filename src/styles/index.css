@@ -39,17 +39,17 @@ body.dark input[type=checkbox] {
 body.dark .add {
   background-color: hsl(235, 24%, 19%);
 }
-body.dark input[type=checkbox]:hover {
+body.dark .add input[type=checkbox]:hover {
   border-color: hsl(280, 87%, 65%);
   box-shadow: -1px -1px 0 hsl(192, 100%, 67%);
 }
-body.dark input[type=text] {
+body.dark .add input[type=text] {
   color: hsl(234, 39%, 85%);
 }
-body.dark button {
+body.dark .add button {
   color: hsl(234, 39%, 85%);
 }
-body.dark button:hover {
+body.dark .add button:hover {
   filter: brightness(50%);
 }
 body.dark li {
@@ -58,6 +58,12 @@ body.dark li {
 }
 body.dark li:hover {
   background-color: hsl(237, 14%, 26%);
+}
+body.dark .list-menu {
+  background-color: hsl(235, 24%, 19%);
+}
+body.dark .list-menu button:hover {
+  color: hsl(233, 11%, 84%);
 }
 body.light {
   background-image: url("../assets/images/bg-desktop-light.jpg");
@@ -69,16 +75,16 @@ body.light input[type=checkbox] {
 body.light .add {
   background-color: hsl(0, 0%, 98%);
 }
-body.light input[type=checkbox]:hover {
+body.light .add input[type=checkbox]:hover {
   border-color: hsl(233, 11%, 84%);
 }
-body.light input[type=text] {
+body.light .add input[type=text] {
   color: hsl(235, 19%, 35%);
 }
-body.light button {
+body.light .add button {
   color: hsl(235, 19%, 35%);
 }
-body.light button:hover {
+body.light .add button:hover {
   background: hsl(236, 33%, 92%);
 }
 body.light li {
@@ -87,6 +93,12 @@ body.light li {
 }
 body.light li:hover {
   background-color: hsl(236, 33%, 92%);
+}
+body.light .list-menu {
+  background-color: hsl(0, 0%, 98%);
+}
+body.light .list-menu button:hover {
+  color: hsl(235, 24%, 19%);
 }
 
 .App {

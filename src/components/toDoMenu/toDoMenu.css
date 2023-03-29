@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+.list-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 380px;
+  height: 41px;
+  border-radius: 5px;
+}
+.list-menu button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.list-menu-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 0.7rem;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.list-menu-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 75%;
+}
+.list-menu-items button {
+  padding: 2px;
+}
+.list-menu-items-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.list-menu-items-clear {
+  margin-right: 8px;
+}
+
+.active {
+  color: hsl(220, 98%, 61%) !important;
+}/*# sourceMappingURL=toDoMenu.css.map */

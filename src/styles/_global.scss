@@ -45,17 +45,19 @@ body {
             border-color: $very-dark-grayish-blue-dark;
         }
         //add
-        .add{background-color: $very-dark-desaturated-blue;}
-        input[type="checkbox"]:hover {
-            border-color: $check-hover;
-            box-shadow: -1px -1px 0 $check-hover-shadow;
-        }
-        input[type="text"]{
-            color: $light-grayish-blue-dark;
-        }
-        button{
-            color: $light-grayish-blue-dark;
-            &:hover{filter: brightness(50%);}
+        .add{
+            background-color: $very-dark-desaturated-blue;
+            input[type="checkbox"]:hover {
+                border-color: $check-hover;
+                box-shadow: -1px -1px 0 $check-hover-shadow;
+            }
+            input[type="text"]{
+                color: $light-grayish-blue-dark;
+            }
+            button{
+                color: $light-grayish-blue-dark;
+                &:hover{filter: brightness(50%);}
+            }
         }
         //to-do-list
         li{
@@ -63,6 +65,13 @@ body {
             background-color: $very-dark-desaturated-blue;
             &:hover {
                 background-color: $very-dark-grayish-blue-darker;
+            }
+        }
+        //list-menu
+        .list-menu{
+            background-color: $very-dark-desaturated-blue;
+            button{
+                &:hover{color: $light-grayish-blue;}
             }
         }
         
@@ -79,16 +88,18 @@ body {
             
         }
         //add
-        .add{background-color: $very-light-gray;}
-        input[type="checkbox"]:hover {
-            border-color: $light-grayish-blue;
-        }
-        input[type="text"]{
-            color: $very-dark-grayish-blue;
-        }
-        button{
-            color: $very-dark-grayish-blue;
-            &:hover{background: $very-light-grayish-blue;}
+        .add{
+            background-color: $very-light-gray;
+            input[type="checkbox"]:hover {
+                border-color: $light-grayish-blue;
+            }
+            input[type="text"]{
+                color: $very-dark-grayish-blue;
+            }
+            button{
+                color: $very-dark-grayish-blue;
+                &:hover{background: $very-light-grayish-blue;}
+            }
         }
         //to-do-list
         li {
@@ -96,6 +107,13 @@ body {
             background-color: $very-light-gray;
             &:hover {
                 background-color: $very-light-grayish-blue;
+            }
+        }
+        //list-menu
+        .list-menu{
+            background-color: $very-light-gray;
+            button{
+                &:hover{color: $very-dark-desaturated-blue;}
             }
         }
 

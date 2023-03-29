@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.list-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: $app-width;
+    height: 41px;
+    border-radius: 5px;
+
+    span,button{color: $dark-grayish-blue-dark;}
+    button {cursor: pointer; border: none; background: none;}
+
+    &-left{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 0.7rem;
+        padding-left: 10px;
+        padding-top: 15px;
+    }
+
+    &-items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 75%;
+        button{padding: 2px;}
+
+        &-filter{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        &-clear{
+            margin-right: 8px;
+        }
+    }
+}
+
+.active{
+    color: $bright-blue !important;
+}
+  

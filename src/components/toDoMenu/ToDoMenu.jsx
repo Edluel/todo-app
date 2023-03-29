@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import './toDoMenu.css';
 
 export default function ToDoMenu(props) {
   const { data, setData } = props;
   const [filter, setFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('all'); // novo estado para armazenar o filtro ativo
 
-  // função para definir a propriedade hidden de cada item com base no filtro selecionado
   const updateDataVisibility = (filter) => {
     setData(
       data.map((item) => {
@@ -16,29 +17,47 @@ export default function ToDoMenu(props) {
           return { ...item, hidden: false };
         }
       })
-      
     );
     setFilter(filter);
+    setActiveFilter(filter);
   };
 
-  // função para limpar todos os itens concluídos
   const clearCompleted = () => {
     const newData = data.filter((item) => !item.done);
     setData(newData);
   };
 
-  // contar quantos itens estão com done = false
   const countIncomplete = () => {
     return data.filter((item) => !item.done).length;
   };
 
   return (
-    <div className="to-do-list-menu">
-      <span>{countIncomplete()} items left</span>
-      <button onClick={() => updateDataVisibility('all')}>All</button>
-      <button onClick={() => updateDataVisibility('incomplete')}>Active</button>
-      <button onClick={() => updateDataVisibility('completed')}>Completed</button>
-      <button onClick={clearCompleted}>Clear Completed</button>
+    <div className="list-menu">
+      <span className='list-menu-left'>{countIncomplete()} items left</span>
+      <div className='list-menu-items'>
+        <div className="list-menu-items-filter">
+          <button 
+            className={`list-menu-items-filter-all ${activeFilter === 'all' ? 'active' : ''}`}
+            onClick={() => updateDataVisibility('all')}>
+              All
+          </button>
+          <button 
+            className={`list-menu-items-filter-incomplete ${activeFilter === 'incomplete' ? 'active' : ''}`} 
+            onClick={() => updateDataVisibility('incomplete')}>
+              Active
+          </button>
+          <button 
+            className={`list-menu-items-filter-complete ${activeFilter === 'completed' ? 'active' : ''}`}
+            onClick={() => updateDataVisibility('completed')}>
+              Completed
+          </button>
+        </div>
+        <button
+          className='list-menu-items-clear'
+          onClick={clearCompleted}>
+            Clear Completed
+        </button>
+      </div>
     </div>
   );
 }
