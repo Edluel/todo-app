@@ -29,8 +29,11 @@ Try the live version of the page [here](https://todo-app-edluel.vercel.app/)
 
 ## <a id="screenshots">Sceenshots</a>
 
-Here are some screenshots of the page clone in action:<br>
-
+Here are some screenshots of the page in action:<br>
+<img src="src/assets/screenshots/todo-app-edluel.vercel.app_.png" width="24%" height="24%">
+<img src="src/assets/screenshots/todo-app-edluel.vercel.app_ (1).png" width="24%" height="24%">
+<img src="src/assets/screenshots/todo-app-edluel.vercel.app_ (2).png" width="25%" height="25%">
+<img src="src/assets/screenshots/todo-app-edluel.vercel.app_ (3).png" width="24%" height="24%">
 
 
 ## <a id="how-to-use">How to use it</a>
