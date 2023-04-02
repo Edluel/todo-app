@@ -11,9 +11,6 @@
 This is a simple todo app built with React and styled with Sass. The app allows users to create, edit, and delete tasks or to-do items. The user can mark a task as complete or incomplete, and the app also includes a filter function to sort the tasks by status or priority.
 
 
-
-This is a multi step form built with React and styled with Sass. The form has 4 steps and a sidebar that indicates the current step.
-
 ## <a id="features">Features</a>
 
 
