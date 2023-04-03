@@ -12,7 +12,12 @@ This is a simple todo app built with React and styled with Sass. The app allows 
 
 
 ## <a id="features">Features</a>
-
+- Add items to the list: When adding items to the list, you have the option to mark them as complete.
+- Complete and incomplete items: Each item on the list has a check button that can be used to mark the item as complete or incomplete. 
+- When an item is marked as complete, the check button is filled with a check icon and the text of the item is crossed out.
+- Drag and drop to reorder: You can drag and drop items on the list to change their order.
+- Filter by completion status: At the bottom of the list, there is a menu that displays the number of pending items and has options to show all items, completed items, or incomplete items.
+- Clear completed items: The menu also has an option to clear completed items from the list.
 
 
 ## <a id="technologies">Technologies Used</a>
